@@ -33,10 +33,10 @@ def decrypt_file(privateKey, publicKey):
 privateKey = [None, None]
 publicKey = [None, None]
 #get the public key and private key from the user
-privateKey[0] = int(input('Please enter the first number of your private key'))
-privateKey[1] = int(input('Please enter the second number of your private key'))
-publicKey[0] = int(input('Please enter the first number of your public key'))
-publicKey[1] = int(input('Please enter the second number of your public key'))
+privateKey[0] = int(input('Please enter the first number of your private key \n>'))
+privateKey[1] = int(input('Please enter the second number of your private key \n>'))
+publicKey[0] = int(input('Please enter the first number of your public key \n>'))
+publicKey[1] = int(input('Please enter the second number of your public key \n>'))
 #convert private and public keys to tuples
 privateKey = tuple(privateKey)
 publicKey = tuple(publicKey)
