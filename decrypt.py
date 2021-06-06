@@ -30,6 +30,15 @@ def decrypt_file(privateKey, publicKey):
     ciphertext.close()
     decryptedFile.close()
 
-privateKey = (903143, 901499)
-publicKey = (814182511357, 9196969)
+privateKey = [None, None]
+publicKey = [None, None]
+#get the public key and private key from the user
+privateKey[0] = int(input('Please enter the first number of your private key'))
+privateKey[1] = int(input('Please enter the second number of your private key'))
+publicKey[0] = int(input('Please enter the first number of your public key'))
+publicKey[1] = int(input('Please enter the second number of your public key'))
+#convert private and public keys to tuples
+privateKey = tuple(privateKey)
+publicKey = tuple(publicKey)
+#decrypt file
 decrypt_file(privateKey, publicKey)

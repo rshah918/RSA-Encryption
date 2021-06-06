@@ -27,8 +27,8 @@ def lcm(a, b):
     return abs(a*b) // math.gcd(a, b)
 
 def generate_primes():
-    p = 903143
-    q = 901499
+    p = None
+    q = None
     while (p == None) or (q==None):
         odd_rand_num = random.randrange(100000,999999)
         if isprime(odd_rand_num):
